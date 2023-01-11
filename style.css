@@ -1,0 +1,166 @@
+/* Editor style */
+.components-input-control__container select[multiple] {
+  height: auto !important;
+}
+
+.components-input-control__container select[multiple] + span {
+  display: none;
+}
+
+h2.gpp-fp-layouts-no-cat {
+	text-align: center !important;
+	color: red !important;
+}
+
+/* Rendering */ 
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h2, 
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h3,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h5,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h6,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main p,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main small,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main span,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main img {
+	margin: 0;
+	padding: 0;
+}
+
+.widget_gpp-frontpage-layouts {
+	margin-bottom: 30px;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h3 {
+	font-size: 20px;
+	margin-bottom: 20px !important;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main img {
+	height: auto;
+    max-width: 100%;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main span.center {
+	display: block;
+	text-align: center;	
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main img.large-thumb {
+	margin-bottom: 15px !important;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main small.date-meta {
+	display: block;
+	font-size: 13px;
+	line-height: 13px;
+	margin-bottom: 5px !important;
+}
+
+.widget_gpp-frontpage-layouts h2.widget-title {
+	padding: 12px 24px;
+	margin-bottom: 30px;
+}
+
+.widget_gpp-frontpage-layouts h2.widget-title:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    bottom: -28px;
+    margin: 0 -25px;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-2cols {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 20px;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main .flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main .l1-right-col-item {
+	height: 80px;
+	margin-bottom: 10px;
+	display: grid;
+	grid-column-gap: 7px;
+	grid-template-columns: 80px 1fr;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main .l1-right-col-item h3 {
+	margin-bottom: 5px !important;
+	font-size: 17px !important;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main .l1-right-col-item .l1-list-details {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4.l3-widget-title {
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4.l3-widget-title:after,
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4.l3-widget-title:before {
+	position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 46%;
+    height: 2px;
+    content: "";
+    background-color: #f0f0f0;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4.l3-widget-title:after {
+	margin-left: 2%;
+    text-align: right;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h4.l3-widget-title:before {
+	margin-left: -48%;
+    text-align: right;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-main ul.l3-structure {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    margin: 0 0 20px 0;
+	list-style: none;
+}
+
+.widget_gpp-frontpage-layouts .gpp-fp-layouts-2cols.layout-4 .l1-right-col-item {
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width:560px) {
+    .widget_gpp-frontpage-layouts .gpp-fp-layouts-2cols {
+		display: block;
+	}
+	
+	.widget_gpp-frontpage-layouts .gpp-fp-layouts-main ul.l3-structure {
+		display: block;
+	}
+	
+	.widget_gpp-frontpage-layouts .gpp-fp-layouts-2cols.layout-1 > div:nth-child(2),
+	.widget_gpp-frontpage-layouts .gpp-fp-layouts-2cols.layout-2 > div:nth-child(2) {
+		margin-top: 25px !important;
+	}
+}
+
+@media screen and (max-width:900px) {
+	.widget_gpp-frontpage-layouts .gpp-fp-layouts-main h3 {
+		font-size: 18px;
+	}
+}
